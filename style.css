@@ -1,0 +1,47 @@
+@font-face{font-family:Cairo;src:url(fonts/cairo-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Cairo;src:url(fonts/cairo-700.woff2) format("woff2");font-weight:700 800;font-display:swap}
+:root{--bk:#0b0b0d;--bk2:#17171b;--gold:#d4af37;--gold2:#f3d77a;--light:#faf7ef}
+*{box-sizing:border-box}body{margin:0;font-family:Cairo,"Segoe UI",Tahoma,"Noto Sans Arabic",Arial,sans-serif;background:var(--light);color:#1b1b1b;line-height:1.6}
+header{background:var(--bk);padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;border-bottom:2px solid var(--gold);position:sticky;top:0;z-index:5}
+header img{height:34px;display:block}header nav a{color:var(--gold2);text-decoration:none;margin-inline-start:14px}
+#q{flex:1 1 100%;order:3;padding:9px 14px;border-radius:99px;border:1px solid var(--gold);background:var(--bk2);color:#fff;font:inherit}
+@media(min-width:700px){#q{flex:0 1 320px;order:0}}
+.hero{background:radial-gradient(circle at 30% 20%,#2a2410,var(--bk) 70%);color:#fff;padding:40px 16px;text-align:center}.hero h1{margin:0;font-size:2.2em;color:var(--gold)}
+main{max-width:1100px;margin:auto;padding:16px}.filters{display:flex;gap:8px;margin-bottom:14px}select{flex:1;padding:8px;border-radius:10px;border:1px solid #ccc;font:inherit;background:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}@media(min-width:700px){.grid{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 14px #0001;display:flex;flex-direction:column;border:1px solid #eee3c0;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 8px 22px #d4af3740}
+.card img{width:100%;aspect-ratio:1;object-fit:cover;display:block}.card .b{padding:10px;display:flex;flex-direction:column;gap:4px;flex:1}.card h3{margin:0;font-size:1em}.muted{color:#777;font-size:.85em}
+.price{color:var(--bk);font-weight:800;font-size:1.25em}.price small{font-size:.6em;color:#b45309;font-weight:400}
+.btn{margin-top:auto;display:block;text-align:center;background:var(--bk);color:var(--gold2);padding:8px;border-radius:10px;text-decoration:none;font-weight:700}.btn:hover{background:var(--gold);color:var(--bk)}
+.badge{display:inline-block;font-size:.72em;padding:1px 9px;border-radius:99px;color:#fff;margin-inline-end:4px}.new{background:#15803d}.used{background:#a16207}.ex{background:#b91c1c}
+.wa{display:block;text-align:center;background:#25d366;color:#fff;padding:14px;border-radius:12px;text-decoration:none;font-weight:700;margin:12px 0;max-width:420px}
+.gallery img{width:100%;max-width:420px;border-radius:16px}.thumbs img{width:64px;cursor:pointer;margin:4px;border-radius:8px;border:2px solid var(--gold)}
+footer{background:var(--bk);color:#bbb;text-align:center;padding:20px 16px;margin-top:24px;border-top:2px solid var(--gold)}footer a{color:var(--gold2);margin:0 8px;text-decoration:none}
+.services{background:var(--bk);color:#eee;border-radius:16px;padding:16px 20px;margin-bottom:18px;border:1px solid var(--gold)}.services h2{color:var(--gold);margin:0}.slogan{color:var(--gold2);font-weight:700;margin:4px 0}.svc{margin:0;padding-inline-start:20px}
+.maps{max-width:420px;margin:8px 0}main h2{color:var(--bk)}
+@media(min-width:900px){#p{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:0 32px;align-items:start}#p .gallery{grid-row:span 9}#p>*:not(.gallery){grid-column:2}}
+header img{height:48px;width:auto;display:block}.flogo{height:56px;margin:0 auto 8px;display:block}
+header nav{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:2px;max-width:100%}header nav a{white-space:nowrap;margin-inline-start:12px}
+@media(max-width:699px){header nav{order:4;flex:1 1 100%;justify-content:space-between}header nav a{margin:0;font-size:.9em}}
+.lead{color:#444}.svcgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:16px 0}
+.scard{background:var(--bk);color:#eee;border:1px solid var(--gold);border-radius:16px;padding:16px}.scard h3{color:var(--gold);margin:6px 0}.scard p{margin:0}.ic{font-size:2em}
+.acc{margin-bottom:24px}.empty{grid-column:1/-1;border:2px dashed var(--gold);border-radius:16px;padding:28px;text-align:center;color:#8a6d1a;background:#fffaf0}
+.logo{text-decoration:none;display:inline-block}.lockup{display:inline-flex;flex-direction:column;align-items:center;line-height:1.05}
+.lk1{color:var(--gold);font-weight:800;font-size:1.6em}.lk2{color:#f3d77a;font-size:.85em;font-weight:400;letter-spacing:.5px;border-top:1px solid #d4af3780;padding-top:2px;margin-top:2px}
+.flogo{display:block;margin:0 auto 10px}.hero h1 span{display:block;font-size:.55em;color:var(--gold2)}.flinks a{display:inline-block;margin:2px 8px}
+.lk2{font-size:1em;font-weight:700}
+.hlock span{display:block;line-height:1.15}.hlock .h1{font-size:1em;color:var(--gold)}.hlock .h2{font-size:.55em;color:#f3d77a;margin-top:4px}.hlock .h3{font-size:.4em;color:#eee;font-weight:400;margin-top:8px}
+header nav{overflow:visible;flex-wrap:wrap;row-gap:4px}
+@media(max-width:1300px){header nav{order:4;flex:1 1 100%;justify-content:center;gap:4px 18px}header nav a{margin:0}}
+@media(max-width:699px){header nav{justify-content:space-between;gap:4px 8px}}
+/* nav v3 */
+.burger{display:none;background:none;border:1px solid var(--gold);color:var(--gold);font-size:1.4em;border-radius:10px;padding:2px 12px;cursor:pointer}
+header nav{display:flex;align-items:center;gap:4px 18px;flex-wrap:nowrap;order:0;flex:0 0 auto;justify-content:flex-start}
+header nav a,.ddbtn{color:var(--gold2);text-decoration:none;margin:0;font:inherit;white-space:nowrap}
+.ddbtn{background:none;border:0;cursor:pointer;padding:0}
+.dd{position:relative}.ddmenu{display:none;position:absolute;top:100%;inset-inline-start:0;background:var(--bk2);border:1px solid var(--gold);border-radius:10px;padding:6px 0;min-width:150px;z-index:20}
+.ddmenu a{display:block;padding:6px 14px}.ddmenu a:hover{background:#d4af3725}.dd.open .ddmenu{display:block}
+@media(hover:hover) and (min-width:900px){.dd:hover .ddmenu{display:block}}
+@media(max-width:899px){.burger{display:block}header nav{display:none;order:5;flex:1 1 100%;flex-direction:column;align-items:stretch;gap:0;border-top:1px solid #d4af3755;padding-top:6px}
+body.navopen header nav{display:flex}header nav>a,.ddbtn{display:block;width:100%;text-align:start;padding:9px 4px;border-bottom:1px solid #ffffff10}
+.ddmenu{position:static;border:0;background:none;padding:0 16px 0 0;min-width:0}}
